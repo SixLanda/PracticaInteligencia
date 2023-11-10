@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de 10 Preguntas</title>
+</head>
+<body>
+
+    <form action="/submit_form" method="POST">
+        <h1>Formulario de 10 Preguntas</h1>
+        
+        <label for="pregunta1">1. ¿Cuál es tu rol dentro del ámbito educativo?</label>
+        <select type="text" id="pregunta1" name="rol" required>
+	<option value="si">Estudiante</option>
+	<option value="si">Docente</option>
+	<option value="si">Administrador</option>
+	</select>
+        <br>
+        
+        <label for="pregunta2">2. ¿Qué dispositivos utilizas regularmente para acceder a plataformas educativas?</label>
+        <select type="number" id="pregunta2" name="dispositivos" required>
+	<option value="si">Computadora de escritorio</option>
+	<option value="si">Laptop</option>
+	<option value="si">Tablet</option>
+	<option value="si">Smartphone</option>
+	</select>
+        <br>
+        
+        <label for="pregunta3">3. ¿Qué navegador prefieres usar para acceder a plataformas educativas?</label>
+        <select type="email" id="pregunta3" name="navegador" required>
+	<option value="si">Google Chrome</option>
+	<option value="si">Firefox</option>
+	<option value="si">Safari</option>
+	<option value="si">Microsoft Edge</option>
+	</select>
+        <br>
+        
+        <label for="pregunta4">4. ¿Cuál de las siguientes funciones consideras más importante en una plataforma de gestión de tareas?</label>
+        <input type="tel" id="pregunta4" name="funciones">
+	<option value="si">Calendario de tareas y eventos</option>
+	<option value="si">Chat o foro para discusión</option>
+	<option value="si">Sistema de calificación y feedback</option>
+	</select>
+        <br>
+        
+        <label for="pregunta5">5. ¿Cómo prefieres ser notificado sobre nuevas tareas o actualizaciones?</label>
+        <select type="text" id="pregunta5" name="actualizaciones" required>
+	<option value="si">Correo electrónico</option>
+	<option value="si">Notificaciones en la aplicación</option>
+	<option value="si">SMS</option>
+	</select>
+        <br>
+        
+        <label for="pregunta6">6. ¿Qué tipo de asistencia técnica consideras crucial?</label>
+        <select id="pregunta6" name="empleo">
+        <option value="si">Chat en vivo</option>
+        <option value="no">Soporte por correo electrónico</option>
+ 	<option value="si">Sí</option>
+        </select>
+        <br>
+        
+        <label for="pregunta7">7. ¿Qué tipo de recursos educativos consideras más útiles?</label>
+        <input type="text" id="pregunta7" name="sector">
+	<option value="si">Documentos de texto y PDFs</option>
+	<option value="si">Videos y multimedia</option>
+	<option value="si">Enlaces a sitios web externos</option>
+	<option value="si">Presentaciones y diapositivas</option>
+        <br>
+        
+        <label for="pregunta8">8. ¿Cómo calificarías la importancia de una interfaz de usuario amigable?</label>
+        <select id="pregunta8" name="educacion">
+            <option value="primaria">Muy importante</option>
+            <option value="secundaria">Importante</option>
+            <option value="universitaria">Neutral</option>
+            <option value="postgrado">Poco importante</option>
+        </select>
+        <br>
+        
+        <label for="pregunta7">9. ¿Qué tan frecuentemente te gustaría que la plataforma se actualice con nuevas funciones?</label>
+        <input type="text" id="pregunta7" name="sector">
+	<option value="si">Mensualmente</option>
+	<option value="si">Trimestralmente</option>
+	<option value="si">Semestralmente</option>
+	<option value="si">Anualmente</option>
+	</select>
+        <br>
+        
+        <label for="pregunta7">10. ¿Prefieres una aplicación dedicada o una versión web responsive?</label>
+        <input type="text" id="pregunta7" name="sector">
+	<option value="si">Aplicación dedicada</option>
+	<option value="si">Versión web responsive</option>
+	<option value="si">Sin preferencia</option>
+	</select>
+        <br>
+        
+        <input type="submit" value="Enviar Formulario">
+    </form>
+
+</body>
+</html>

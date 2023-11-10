@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from api.views import Login, Home, Formulario, APIUsuario, Preguntas
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',Login.as_view(),name='login'),   
+    path('home',Home.as_view(),name='home'), 
+    path('formulario/',Formulario.as_view(),name='forms'),
+    path('usuario', APIUsuario.as_view(), name='APIUsuario'),
+    path('preguntas/', Preguntas.as_view(), name='preguntas'),
 ]
