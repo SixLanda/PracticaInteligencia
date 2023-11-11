@@ -1,0 +1,18 @@
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #1c4f4e;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(45, 132, 64), rgb(62, 252, 37));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(86, 206, 82), rgb(143, 208, 129))
+    
+    }
+
+.p1{
+    background-color: #45b38178;
+    border-radius: 5px;
+    background-image: url(pngwing.com.png);
+    color: rgb(0, 0, 0);
+}
