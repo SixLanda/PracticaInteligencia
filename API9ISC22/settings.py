@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'API9ISC22.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bd_9isc22',
-        'USER': 'bd_9isc22_user',
-        'PASSWORD': 'zdNP1jsdrzetbhov4En6H2CxAAWfKTkC',
-        'HOST': 'oregon-postgres.render.com',
+        'NAME': 'preguntas',
+        'USER': 'postgres',
+        'PASSWORD': '12345',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }

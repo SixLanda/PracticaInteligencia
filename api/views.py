@@ -56,3 +56,7 @@ class Preguntas(APIView):
     def get(self,request):
        return render(request,self.template_name)
         
+class Tareas(APIView):
+    template_name='registro_tareas.html'
+    def get(self,request):
+        return render(render,self.template_name)
