@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestor de Tareas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            width: 60%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="datetime-local"], select, button {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+        }
+
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Tareas</h1>
+        <form id="taskForm">
+            <label for="title">Título de la Tarea:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="detail">Detalle de la Tarea:</label>
+            <input type="text" id="detail" name="detail" required>
+
+            <label for="creationDate">Fecha de Creación:</label>
+            <input type="datetime-local" id="creationDate" name="creationDate" required>
+
+            <label for="dueDate">Fecha de Vencimiento:</label>
+            <input type="datetime-local" id="dueDate" name="dueDate" required>
+
+            <label for="status">Estado de la Tarea:</label>
+            <select id="status" name="status" required>
+                <option value="pendiente">Pendiente</option>
+                <option value="completada">Completada</option>
+            </select>
+
+            <label for="type">Tipo de Tarea:</label>
+            <select id="type" name="type" required>
+                <option value="general">General</option>
+                <option value="recordatorio">Recordatorio</option>
+            </select>
+
+            <button type="submit">Registrar Tarea</button>
+        </form>
+    </div>
+</body>
+</html>
